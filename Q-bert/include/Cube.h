@@ -10,6 +10,9 @@ class Cube
         void SetColor(int);
         void gotoxy(int,int);
         void objetivo();
+        void nivel();
+        void vidas();
+        void txtvidas();
         virtual ~Cube();
 
     protected:

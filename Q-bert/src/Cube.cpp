@@ -165,6 +165,84 @@ void Cube::objetivo(){
     cout <<" `-----'  `------'   `-----'  `------'    `--'    `--'     `-'      `-----'      '--'" << endl;
 }
 
+void Cube::nivel(){
+    gotoxy(2,4);
+    cout << ",--.  ,--. ,--. ,--.   ,--. ,------. ,--." << endl;
+    gotoxy(2,5);
+    cout << "|  ,'.|  | |  |  "<<(char)92<<"  `.'  /  |  .---' |  |        .--." << endl;
+    gotoxy(2,6);
+    cout << "|  |' '  | |  |   "<<(char)92<<"     /   |  `--,  |  |        '--'" << endl;
+    gotoxy(2,7);
+    cout << "|  | `   | |  |    "<<(char)92<<"   /    |  `---. |  '--.     .--." << endl;
+    gotoxy(2,8);
+    cout << "`--'  `--' `--'     `-'     `------' `-----'     '--'" << endl;
+}
+
+void Cube::vidas(){
+    gotoxy(2,12);
+    cout << ",--.   ,--. ,--. ,------.     ,---.    ,---.";
+    gotoxy(2,13);
+    cout << " "<<(char)92<<"  `.'  /  |  | |  .-.  "<<(char)92<<"   /  O  "<<(char)92<<"  '   .-'  .--.";
+    gotoxy(2,14);
+    cout << "  "<<(char)92<<"     /   |  | |  |  "<<(char)92<<"  : |  .-.  | `.  `-.  '--' ";
+    gotoxy(2,15);
+    cout << "   "<<(char)92<<"   /    |  | |  '--'  / |  | |  | .-'    | .--. ";
+    gotoxy(2,16);
+    cout << "    `-'     `--' `-------'  `--' `--' `-----'  '--' ";
+}
+
+void Cube::txtvidas(){
+    SetColor(12);
+    gotoxy(2,20);
+    cout << "  M..M     M..M";
+    gotoxy(2,21);
+    cout << " M.....M M.....M";
+    gotoxy(2,22);
+    cout << " M......M......M";
+    gotoxy(2,23);
+    cout << "  M............M";
+    gotoxy(2,24);
+    cout << "   M..........M";
+    gotoxy(2,25);
+    cout << "    M.......M";
+    gotoxy(2,26);
+    cout << "      M...M";
+    gotoxy(2,27);
+    cout << "        M";
+    gotoxy(20,20);
+    cout << "  M..M     M..M";
+    gotoxy(20,21);
+    cout << " M.....M M.....M";
+    gotoxy(20,22);
+    cout << " M......M......M";
+    gotoxy(20,23);
+    cout << "  M............M";
+    gotoxy(20,24);
+    cout << "   M..........M";
+    gotoxy(20,25);
+    cout << "    M.......M";
+    gotoxy(20,26);
+    cout << "      M...M";
+    gotoxy(20,27);
+    cout << "        M";
+    gotoxy(38,20);
+    cout << "  M..M     M..M";
+    gotoxy(38,21);
+    cout << " M.....M M.....M";
+    gotoxy(38,22);
+    cout << " M......M......M";
+    gotoxy(38,23);
+    cout << "  M............M";
+    gotoxy(38,24);
+    cout << "   M..........M";
+    gotoxy(38,25);
+    cout << "    M.......M";
+    gotoxy(38,26);
+    cout << "      M...M";
+    gotoxy(38,27);
+    cout << "        M";
+    SetColor(5);
+}
 Cube::~Cube()
 {
     //dtor
