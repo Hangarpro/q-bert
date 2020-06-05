@@ -48,7 +48,7 @@ void Player::Movimiento(char letra){
         Jugador.deletePlayer(x,y);
         x = x+11;
         y = y+10;
-        PlaySound(TEXT("Jump.wav"), NULL, SND_FILENAME | SND_ASYNC);
+        //PlaySound(TEXT("Jump.wav"), NULL, SND_FILENAME | SND_ASYNC);
         Jugador.Pintar(x,y);
         Jugador.colorCubo(x,y);
     }
@@ -57,7 +57,7 @@ void Player::Movimiento(char letra){
         gotoxy(x-11,y+10);
         x = x-11;
         y = y+10;
-        PlaySound(TEXT("Jump.wav"), NULL, SND_FILENAME | SND_ASYNC);
+        //PlaySound(TEXT("Jump.wav"), NULL, SND_FILENAME | SND_ASYNC);
         Jugador.Pintar(x,y);
         Jugador.colorCubo(x,y);
     }
@@ -65,7 +65,7 @@ void Player::Movimiento(char letra){
         Jugador.deletePlayer(x,y);
         x = x+11;
         y = y-10;
-        PlaySound(TEXT("Jump.wav"), NULL, SND_FILENAME | SND_ASYNC);
+       // PlaySound(TEXT("Jump.wav"), NULL, SND_FILENAME | SND_ASYNC);
         Jugador.Pintar(x,y);
         Jugador.colorCubo(x,y);
     }
@@ -74,7 +74,7 @@ void Player::Movimiento(char letra){
         gotoxy(x-11,y-10);
         x = x-11;
         y = y-10;
-        PlaySound(TEXT("Jump.wav"), NULL, SND_FILENAME | SND_ASYNC);
+       // PlaySound(TEXT("Jump.wav"), NULL, SND_FILENAME | SND_ASYNC);
         Jugador.Pintar(x,y);
         Jugador.colorCubo(x,y);
     }
@@ -292,7 +292,7 @@ void Player::colorCubo(int x, int y){
         }
     }
     else{
-        PlaySound(TEXT("Fall.wav"), NULL, SND_FILENAME | SND_ASYNC);
+       //PlaySound(TEXT("Fall.wav"), NULL, SND_FILENAME | SND_ASYNC);
         Sleep(1000);
         Jugador.borrar(x,y);
         x = 99;
