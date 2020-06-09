@@ -22,6 +22,9 @@ class Player
         void txtnivel();
         void txtvidas();
         int salida();
+        void setSalir(int);
+        int getContador();
+        void setContador(int);
         virtual ~Player();
 
     protected:

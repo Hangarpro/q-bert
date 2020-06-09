@@ -13,7 +13,7 @@ using namespace std;
 Player Jugador;
 Cube Cubo;
 Menu menu;
-int salir = 1;
+int salir = 1, contador = 1;
 
 void Player::SetColor(int ForgC){
 WORD wColor;
@@ -57,6 +57,7 @@ void Player::Movimiento(char letra){
         Jugador.Pintar(x,y);
         Jugador.colorCubo(x,y);
         Jugador.setLevel(x,y);
+        contador++;
     }
     if (letra == 'a'){
         Jugador.deletePlayer(x,y);
@@ -67,6 +68,7 @@ void Player::Movimiento(char letra){
         Jugador.Pintar(x,y);
         Jugador.colorCubo(x,y);
         Jugador.setLevel(x,y);
+        contador++;
     }
     if(letra == 'd'){
         Jugador.deletePlayer(x,y);
@@ -76,6 +78,7 @@ void Player::Movimiento(char letra){
         Jugador.Pintar(x,y);
         Jugador.colorCubo(x,y);
         Jugador.setLevel(x,y);
+        contador++;
     }
     if (letra == 'w'){
         Jugador.deletePlayer(x,y);
@@ -86,6 +89,7 @@ void Player::Movimiento(char letra){
         Jugador.Pintar(x,y);
         Jugador.colorCubo(x,y);
         Jugador.setLevel(x,y);
+        contador++;
     }
 }
 
@@ -1346,7 +1350,13 @@ void Player::setLevel(int x, int y){
             menu.Winner();
             PlaySound(TEXT("Stage Clear.wav"), NULL, SND_FILENAME | SND_ASYNC);
             Sleep(4000);
-            salir = 4;
+            salir = 3;
+            Jugador.setCaida(1);
+            level = 1;
+            life = 4;
+            for (int i = 0;i < 21; i++){
+                s_color[i] = 0;
+            }
         }
     }
 }
@@ -1470,10 +1480,27 @@ void Player::txtvidas(){
         menu.Loser();
         PlaySound(TEXT("Game Over.wav"), NULL, SND_FILENAME | SND_ASYNC);
         Sleep(4000);
-        salir = 4;
+        salir = 3;
+        life = 4;
+        level = 1;
+        for (int i = 0;i < 21; i++){
+                s_color[i] = 0;
+        }
     }
 }
 
 int Player::salida(){
     return salir;
+}
+
+void Player::setSalir(int salida){
+    salir = salida;
+}
+
+int Player::getContador(){
+    return contador;
+}
+
+void Player::setContador(int _contador){
+    contador = _contador;
 }

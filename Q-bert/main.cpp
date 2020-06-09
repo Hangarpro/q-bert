@@ -13,6 +13,14 @@
 #include "Menu.h"
 
 using namespace std;
+void gotoxy(int x,int y){
+    HANDLE hcon;
+    hcon = GetStdHandle(STD_OUTPUT_HANDLE);
+    COORD dwPos;
+    dwPos.X = x;
+    dwPos.Y= y;
+    SetConsoleCursorPosition(hcon,dwPos);
+}
 void SetColor(int ForgC){
 WORD wColor;
 
@@ -32,12 +40,16 @@ int main(){
     Player Jugador;
     Menu menu;
     Cube Cubo;
-    int exit = 0;
+    int exit = 0, movimientos = 0;
     char opcion, salir = 0, letra;
+    time_t inicio = 0,fin,delta;
+    int b_time = 200, b_moves = 180;
 
     PlaySound(TEXT("Theme.wav"), NULL, SND_FILENAME | SND_ASYNC);
     while (exit != 4){
         salir = '0';
+        Jugador.setSalir(0);
+        Jugador.setContador(1);
         system("cls");
         SetColor(15);
         menu.Principal();
@@ -47,6 +59,8 @@ int main(){
                 PlaySound(NULL, NULL, SND_ASYNC);
                 system("cls");
                 Map();
+                gotoxy(160, 38);
+                cout << "Highscore   -   Time: " << b_time << "s  Moves: " << b_moves;
                 Jugador.Pintar(99,3);
                 Cubo.nivel();
                 Cubo.objetivo();
@@ -55,12 +69,29 @@ int main(){
                 Sleep(4000);
                 Jugador.txtnivel();
                 Cubo.txtvidas();
+                inicio = time(NULL);
                 while (salir != 3){
                     letra = getch();
+                    movimientos = Jugador.getContador();
                     Jugador.Movimiento(letra);
                     salir = Jugador.salida();
+                    fin = time(NULL);
+                    delta = fin-inicio;
+                    gotoxy(160,42);
+                    cout << "                                                        ";
+                    gotoxy(160,42);
+                    cout << "Score   -   Time: " << delta << "s Moves: " << movimientos;
                     if (salir == 4){
                         return 0;
+                    }
+                }
+                if (movimientos < b_moves){
+                    b_moves = movimientos;
+                    b_time = delta;
+                }
+                if (movimientos == b_moves){
+                    if(delta < b_time){
+                        b_time = delta;
                     }
                 }
             break;

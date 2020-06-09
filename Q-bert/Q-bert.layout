@@ -2,14 +2,70 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1318" topLine="17" />
+		</Cursor>
+		<Folding>
+			<Collapse line="15" />
+			<Collapse line="23" />
+		</Folding>
+	</File>
 	<File name="include\Cube.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="216" topLine="0" />
+			<Cursor1 position="146" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\Player.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Menu.cpp" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="539" topLine="0" />
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="16" />
+			<Collapse line="31" />
+			<Collapse line="40" />
+			<Collapse line="3225" />
+			<Collapse line="4720" />
+		</Folding>
+	</File>
+	<File name="src\Player.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="39785" topLine="366" />
+		</Cursor>
+		<Folding>
+			<Collapse line="138" />
+			<Collapse line="188" />
+			<Collapse line="238" />
+			<Collapse line="288" />
+			<Collapse line="338" />
+			<Collapse line="388" />
+			<Collapse line="438" />
+			<Collapse line="488" />
+			<Collapse line="538" />
+			<Collapse line="588" />
+			<Collapse line="638" />
+			<Collapse line="688" />
+			<Collapse line="738" />
+			<Collapse line="788" />
+			<Collapse line="838" />
+			<Collapse line="888" />
+			<Collapse line="938" />
+			<Collapse line="988" />
+			<Collapse line="1038" />
+			<Collapse line="1088" />
+			<Collapse line="1138" />
+			<Collapse line="1363" />
+			<Collapse line="1423" />
+		</Folding>
+	</File>
+	<File name="src\Map.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="401" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Cube.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="656" topLine="5" />
 		</Cursor>
 	</File>
 	<File name="include\Map.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -17,47 +73,9 @@
 			<Cursor1 position="75" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Map.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\Player.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Cube.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4189" topLine="144" />
-		</Cursor>
-	</File>
-	<File name="src\Player.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="39041" topLine="183" />
-		</Cursor>
-		<Folding>
-			<Collapse line="129" />
-			<Collapse line="179" />
-			<Collapse line="229" />
-			<Collapse line="279" />
-			<Collapse line="329" />
-			<Collapse line="379" />
-			<Collapse line="429" />
-			<Collapse line="479" />
-			<Collapse line="529" />
-			<Collapse line="579" />
-			<Collapse line="629" />
-			<Collapse line="679" />
-			<Collapse line="729" />
-			<Collapse line="779" />
-			<Collapse line="829" />
-			<Collapse line="879" />
-			<Collapse line="929" />
-			<Collapse line="979" />
-			<Collapse line="1029" />
-			<Collapse line="1079" />
-			<Collapse line="1129" />
-		</Folding>
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="196" topLine="0" />
+			<Cursor1 position="677" topLine="0" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

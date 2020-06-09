@@ -6,9 +6,6 @@ class Enemy
 {
     public:
         Enemy();
-        void SetColor(int);
-        void gotoxy(int,int);
-        void leftFall();
         virtual ~Enemy();
 
     protected:

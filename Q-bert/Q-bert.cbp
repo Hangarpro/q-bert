@@ -36,10 +36,12 @@
 		</Compiler>
 		<Unit filename="include/Cube.h" />
 		<Unit filename="include/Map.h" />
+		<Unit filename="include/Menu.h" />
 		<Unit filename="include/Player.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Cube.cpp" />
 		<Unit filename="src/Map.cpp" />
+		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/Player.cpp" />
 		<Extensions />
 	</Project>
