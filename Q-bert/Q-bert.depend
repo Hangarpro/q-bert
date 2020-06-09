@@ -119,3 +119,54 @@
 	<stdio.h>
 	<fstream>
 
+1591372701 source:c:\users\litzy escalera\desktop\q-bert\main.cpp
+	<iostream>
+	<windows.h>
+	<stdlib.h>
+	<time.h>
+	<conio.h>
+	<dos.h>
+	<dir.h>
+	<stdio.h>
+	<fstream>
+	"Cube.h"
+	"Map.h"
+	"Player.h"
+	"Menu.h"
+
+1591372701 c:\users\litzy escalera\desktop\q-bert\include\cube.h
+
+1591372701 c:\users\litzy escalera\desktop\q-bert\include\map.h
+
+1591372701 c:\users\litzy escalera\desktop\q-bert\include\player.h
+
+1591372701 c:\users\litzy escalera\desktop\q-bert\include\menu.h
+
+1591372701 source:c:\users\litzy escalera\desktop\q-bert\src\cube.cpp
+	"Cube.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<dos.h>
+	<dir.h>
+
+1591372701 source:c:\users\litzy escalera\desktop\q-bert\src\map.cpp
+	"Map.h"
+	"Cube.h"
+	<stdio.h>
+	<windows.h>
+
+1591372701 source:c:\users\litzy escalera\desktop\q-bert\src\player.cpp
+	"Player.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<dos.h>
+	<dir.h>
+	<fstream>
+	<Cube.h>
+	<Map.h>
+	<Menu.h>
+
